@@ -24,7 +24,7 @@ A secure and scalable REST API for managing cryptocurrency wallets, built with N
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/marianoamaris/wallet-backend>
 cd wallet-backend
 ```
 
