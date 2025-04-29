@@ -2,6 +2,18 @@
 
 A secure and scalable REST API for managing cryptocurrency wallets, built with Node.js, Express, TypeScript, and PostgreSQL.
 
+## 🎥 Demo & Walkthrough
+
+[![Watch the walkthrough](https://cdn.loom.com/sessions/thumbnails/29a11d327bb1468eb59424a8d121c47b-with-play.gif)](https://www.loom.com/share/29a11d327bb1468eb59424a8d121c47b)
+
+Watch a complete walkthrough of the application and its features in this video demonstration. The video covers:
+
+- Application architecture and setup
+- API endpoints and functionality
+- Database structure
+- Authentication flow
+- Wallet management features
+
 ## Features
 
 - 🔐 Secure user authentication with JWT
