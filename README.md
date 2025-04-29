@@ -55,6 +55,7 @@ npm run dev
 
 - `POST /api/auth/register` - Register a new user
 - `POST /api/auth/login` - Login and get JWT token
+- `POST /api/auth/signout` - Sign out user
 
 ### Wallets
 

@@ -9,21 +9,18 @@ import { authenticateToken } from "../middleware/auth";
 const router = express.Router();
 const authService = new AuthService();
 
-// Rate limiter configuration for auth routes
-const authLimiter = rateLimit({
+// Rate limiter configuration for login route only
+const loginLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 3, // Limit each IP to 3 requests per windowMs
+  max: 5, // Limit each IP to 5 requests per windowMs
   message: {
     success: false,
     message: "Too many login attempts. Please try again after 15 minutes.",
   },
-  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-  skipSuccessfulRequests: false, // Count successful requests against the rate limit
+  standardHeaders: true,
+  legacyHeaders: false,
+  skipSuccessfulRequests: true, // Don't count successful attempts
 });
-
-// Apply rate limiting to auth routes
-router.use(authLimiter);
 
 router.post(
   "/register",
@@ -44,6 +41,7 @@ router.post(
 
 router.post(
   "/login",
+  loginLimiter, // Apply rate limiting only to login route
   validateRequest(userSchema),
   async (req: CustomRequest, res, next) => {
     try {
