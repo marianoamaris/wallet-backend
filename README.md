@@ -113,17 +113,7 @@ npm run dev
    DATABASE_URL=postgresql://wallet_user:your_password@localhost:5432/wallet_db
    ```
 
-4. Run database migrations:
-
-   ```bash
-   # Generate migration from entities
-   npm run typeorm:generate-migration
-
-   # Apply migrations
-   npm run typeorm:run-migrations
-   ```
-
-5. Verify database setup:
+4. Verify database setup:
 
    ```bash
    # Connect to the database
