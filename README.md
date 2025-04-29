@@ -4,9 +4,9 @@ A secure and scalable REST API for managing cryptocurrency wallets, built with N
 
 ## 🎥 Demo & Walkthrough
 
-[![Watch the walkthrough](https://cdn.loom.com/sessions/thumbnails/29a11d327bb1468eb59424a8d121c47b-with-play.gif)](https://www.loom.com/share/29a11d327bb1468eb59424a8d121c47b)
+🔗 **[Watch the Full Demo Video](https://www.loom.com/share/29a11d327bb1468eb59424a8d121c47b)**
 
-Watch a complete walkthrough of the application and its features in this video demonstration. The video covers:
+In this video walkthrough, you'll see:
 
 - Application architecture and setup
 - API endpoints and functionality
